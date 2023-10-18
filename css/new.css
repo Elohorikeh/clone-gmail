@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:wght@300;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+
+  html,
+  body{
+    font-family: 'lato', sans-serif;
+    height: 100%;
+   
+    
+  }
+
+
+  /* Header */
+  .header {
+    display: inline-flex;
+    margin-top: 8px;
+  }
+  .header .icon span {
+    font-size: 20px;
+  }
+
+  .img img {
+    width: 50%;
+  }
+
+  .header input {
+    position:relative;
+    width: 750px;
+    height: 45px;
+    background:linear-gradient(315deg,#c8dbf7, #c8dbf7); 
+    border: none;
+    border-radius: 50px;
+    padding: 0 48px;
+    box-shadow: 0 10px 10px rgba (0,0,0,0.1);
+  }
+ 
+   .header .icon .search {
+    position: absolute;
+    top: 2%;
+    left: 21%;
+    z-index:2;
+   }
+
+   .header .icon .more {
+    position: absolute;
+    top:2%;
+    right: 20%;
+   }
+
+
+
+   /* Ultilities */
+     .icon span {
+     position: relative;
+     display: inline-flex;
+     text-align: center;
+     width: 40px;
+     height: 40px;
+     justify-items: center;
+     text-align: center;
+     line-height: auto ;
+     border-radius: 58%;
+     padding: 5px 15px;
+     margin: 0 10px;
+     transition: all 0.15s;
+      
+    }
+    .icon span:hover {
+    background: linear-gradient(315deg,#dddada, #dfe1e4);
+    box-shadow: 0 10px 10px rgba (0,0,0,0.1);
+   }
+  
+   .icon span:hover .tooltip {
+    background: linear-gradient(315deg,#dddada, #dfe1e4);
+    box-shadow: 0 10px 10px rgba (0,0,0,0.1);
+    opacity: 1;
+    pointer-events: auto;
+
+  }
+
+  .icon .tooltip {
+  position: absolute;
+  top: 10%;
+  font-size: 13px;
+  pointer-events: none;
+  opacity: 0;
+
+  }
+
+
+  /* Hero-section */
+
+  
+
+  

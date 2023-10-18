@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&family=Rubik:wght@300;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'poppins', 'sans-serif';
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items :center; 
+    background: linear-gradient(315deg,#ffffff, #d7e1ec);  
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .icons {
+    margin: 0 20px;
+}
+
+.wrapper .icon {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor:pointer;
+    position: relative;
+    Margin: 0 20px;
+    z-index: 2;
+}
+
+.wrapper .icon span {
+     position: relative;
+     height: 60px;
+     width:60px;
+     display: block;
+     background: #fff;
+     text-align: center;
+     border-radius: 50%;
+     box-shadow: 0 10px 10px rgba (0,0,0,0.1);
+}
+
+.wrapper .icon span i {
+    font-size: 20px;
+    line-height: 60px;
+    z-index: 2;
+
+}
+
+.wrapper .icon .tooltip {
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.45 cubic-bezier(0.69,-0.55,0.256,1.55);
+    
+}
+
+.wrapper .icon .tooltip:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+
+}
+
+.wrapper .icon:hover .tooltip {
+    opacity: 1 ;
+    pointer-events:  auto;
+    transition: all 0.45 cubic-bezier(0.69,-0.55,0.256,1.55);
+    top: -50px;
+}
